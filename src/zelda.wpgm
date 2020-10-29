@@ -3,7 +3,16 @@ import personaje.*
 
 program abc {
 
-
+	// límites del juego
+	game.width(25)
+	game.height(20)
+	
+	//fondo
+	game.boardGround("sustituto-fondo.png")
+	
+	//personaje principal
+	game.addVisualCharacter(link)
+	
 	//empieza el juego
 	game.start()
 
