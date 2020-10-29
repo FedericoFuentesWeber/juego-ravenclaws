@@ -1,0 +1,10 @@
+import wollok.game.*
+import personaje.*
+
+program abc {
+
+
+	//empieza el juego
+	game.start()
+
+}

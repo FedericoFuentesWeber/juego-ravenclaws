@@ -1,0 +1,6 @@
+import personaje.*
+
+object enemigo {
+	
+	
+}
