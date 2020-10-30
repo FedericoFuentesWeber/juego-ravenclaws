@@ -1,7 +1,11 @@
 import wollok.game.*
 import personaje.*
+import objetos.*
+import enemigos.*
+import armas.*
+import juego.*
 
-program abc {
+program juego {
 
 	// límites del juego
 	game.width(25)
@@ -12,6 +16,19 @@ program abc {
 	
 	//personaje principal
 	game.addVisualCharacter(link)
+	
+	// objetos
+	juego.aparecerObjeto(llave)
+	juego.aparecerObjeto(espada)
+	
+	//enemigos
+	juego.aparecerEnemigo()
+	juego.aparecerEnemigo()
+	
+	
+	//comandos
+	game.onCollideDo(link, {unCorazon => link.recuperarVida(unCorazon)})
+	game.onCollideDo(link, {joya => link.agarrar(joya)})
 	
 	//empieza el juego
 	game.start()
